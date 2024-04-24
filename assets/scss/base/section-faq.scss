@@ -1,0 +1,118 @@
+.section-faq {
+    background: #F8F8F8;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    @include sp {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .faq-ttl {
+        text-align: center;
+        .en-ttl {
+            font-size: 26px;
+            line-height: 32px;
+            color: $letter;
+            font-weight: bold;
+            font-family: Roboto;
+            background: linear-gradient(transparent 60%, #B0DCD6 0%);
+            border-radius: 10px;
+            display: inline-flex;
+            @include sp {
+                font-size: 22px;
+                line-height: 27px;
+            }
+        }
+        .jp-ttl {
+            margin-top: 10px;
+            font-size: 36px;
+            line-height: 52px;
+            color: $green;
+            font-weight: bold;
+            font-family: NotoSans;
+            @include sp {
+                margin-top: 9px;
+                font-size: 30px;
+                line-height: 44px;
+            }
+        }
+    }
+    .faq-contents {
+        margin-top: 50px;
+        .faq-item {
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 10px;
+            width: 1000px;
+            margin-bottom: 20px;
+            @include lp {
+                width: 1200rem;
+                margin: 0 auto 20px;
+            }
+            @include sp {
+                margin: 0 20px 20px;
+                width: auto;
+            }
+            .faq-accordion {
+                cursor: pointer;
+                border: none;
+                outline: none;
+                transition: 0.4s;
+                &__question {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .mark-question {
+                        display: flex;
+                        justify-content: flex-start;
+                        .faq-mark {
+                            font-size: 30px;
+                            line-height: 27px;
+                            font-weight: bold;
+                            font-family: Roboto;
+                            color: $green;
+                        }
+                        .faq-question {
+                            margin: 0 15px;
+                            font-size: 20px;
+                            line-height: 27px;
+                            font-weight: bold;
+                            font-family: NotoSans;
+                            color: $letter;
+                        }
+                    }
+                }
+            }
+            .faq-accordion-panel {
+                .under-line {
+                    margin: 20px 0;
+                    width: 940px;
+                    border: 1px solid #E6E6E6;
+                }
+                font-size: 16px;
+                line-height: 26px;
+                font-family: NotoSans;
+                font-weight: bold;
+                color: $letter;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+        }
+        .arrow {
+            border: solid $green;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 4px;
+            width: 14px;
+            height: 14px;
+        }
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    }
+}

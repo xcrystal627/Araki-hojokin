@@ -1,0 +1,34 @@
+$sp: 550px;
+$md: 750px;
+$tb: 992px;
+$lp: 1200px;
+$pc: 1400px;
+@mixin pc {
+    @media (max-width: $pc) {
+        @content;
+    }
+}
+
+@mixin lp {
+    @media (max-width: $lp) {
+        @content;
+    }
+}
+
+@mixin tb {
+    @media (max-width: $tb) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: $sp) {
+        @content;
+    }
+}

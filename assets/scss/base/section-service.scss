@@ -1,0 +1,98 @@
+.section-service {
+    background: $green;
+    padding-bottom: 100px;
+    .service-ttl {
+        text-align: center;
+        .en-ttl {
+            margin-top: 80px;
+            font-size: 20px;
+            line-height: 32px;
+            color: #fff;
+            font-weight: bold;
+            font-family: Roboto;
+            background: linear-gradient(transparent 60%, #008D70 0%);
+            border-radius: 10px;
+            text-align: center;
+            display: inline-flex;
+            @include tb {}
+            @include sp {
+                margin-top: 63px;
+                font-size: 22px;
+                line-height: 27px;
+            }
+        }
+        .jp-ttl {
+            margin-top: 10px;
+            font-size: 32px;
+            line-height: 46px;
+            color: #fff;
+            font-weight: bold;
+            font-family: NotoSans;
+            .md-show {
+                display: none;
+            }
+            @include md {
+                .md-show {
+                    display: block;
+                }
+            }
+            @include sp {
+                margin-top: 22px;
+                font-size: 23px;
+                line-height: 32px;
+            }
+        }
+    }
+    .service-items {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        .item {
+            .item-pack {}
+            .item-desc {
+                margin-top: 30px;
+                font-size: 26px;
+                line-height: 37px;
+                color: #fff;
+                font-weight: bold;
+                font-family: NotoSans;
+                text-align: center;
+                .back-green {
+                    background: linear-gradient(transparent 60%, #008D70 0%);
+                    border-radius: 10px;
+                }
+            }
+        }
+        @include tb {
+            .item {
+                padding: 0 20px;
+                .item-desc {
+                    margin-top: 30rem;
+                    font-size: 30rem;
+                    line-height: 60rem;
+                }
+            }
+        }
+        @include sp {
+            flex-direction: column;
+            align-items: center;
+            .item {
+                padding: 0 20px;
+                .item-desc {
+                    margin-top: 20px;
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+            }
+            .mt-40 {
+                margin-top: 40px;
+            }
+        }
+    }
+    @include tb {
+        padding-bottom: 100rem;
+    }
+    @include sp {
+        padding-bottom: 60px;
+    }
+}

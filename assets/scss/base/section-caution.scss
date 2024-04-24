@@ -1,0 +1,63 @@
+.section-caution {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .caution {
+        width: 1000px;
+        @include lp {
+            width: 1200rem;
+            margin: 0 auto;
+        }
+        @include sp {
+            width: auto;
+            margin: 0 20px;
+        }
+        &-ttl {
+            height: 85px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            color: #fff;
+            background: #F06464;
+            .back-img {
+                background: url('./../img/caution.png') center no-repeat;
+                z-index: -10;
+                width: 100%;
+                height: 100%;
+                font-size: 30px;
+                line-height: 44px;
+                font-weight: bold;
+                font-family: NotoSans;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @include sp {
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+        &-desc {
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: 3px solid #F06464;
+            font-size: 22px;
+            line-height: 32px;
+            height: 94px;
+            font-weight: bold;
+            font-family: NotoSans;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFF7F7;
+            color: $letter;
+            text-align: center;
+            .sp-only {
+                display: none;
+                @include sp {
+                    display: block;
+                }
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+    }
+}

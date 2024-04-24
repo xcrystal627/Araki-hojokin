@@ -1,0 +1,282 @@
+.section-works {
+    background: #F8F8F8;
+    padding-bottom: 80px;
+    @include sp {
+        padding-bottom: 50px;
+    }
+    .works-ttl {
+        text-align: center;
+        .en-ttl {
+            margin-top: 80px;
+            font-size: 26px;
+            line-height: 32px;
+            color: $letter;
+            font-weight: bold;
+            font-family: Roboto;
+            background: linear-gradient(transparent 60%, #B0DCD6 0%);
+            border-radius: 10px;
+            display: inline-flex;
+            @include sp {
+                margin-top: 63px;
+                font-size: 22px;
+                line-height: 27px;
+            }
+        }
+        .jp-ttl {
+            margin-top: 10px;
+            font-size: 36px;
+            line-height: 52px;
+            color: $green;
+            font-weight: bold;
+            font-family: NotoSans;
+            @include sp {
+                margin-top: 9px;
+                font-size: 30px;
+                line-height: 44px;
+            }
+        }
+    }
+    .works-desc {
+        margin-top: 32px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        font-family: NotoSans;
+        color: $letter;
+        text-align: center;
+        .sp-only {
+            display: none;
+            @include sp {
+                display: block;
+            }
+        }
+        @include sp {
+            margin-top: 20px;
+        }
+    }
+    .works-items {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        @include tb {
+            flex-direction: column;
+            align-items: center;
+        }
+        @include sp {
+            margin-top: 30px;
+        }
+        .work-item {
+            background: #fff;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            @include sp {
+                width: 335px;
+                margin: 0 auto;
+            }
+            .item-img {
+                margin: 20px 20px 0;
+                border-radius: 6px;
+                width: 270px;
+                height: 152px;
+                background: #E5E5E5;
+                @include lp {
+                    margin: 20rem 20rem 0;
+                    border-radius: 6rem;
+                    width: 310rem;
+                    height: 152rem;
+                }
+                @include tb {
+                    margin: 20px 20px 0;
+                    border-radius: 6px;
+                    width: 310px;
+                    height: 152px;
+                }
+                @include sp {
+                    width: 295px;
+                    height: 152px;
+                }
+            }
+            .item-ttl {
+                margin-top: 10px;
+                font-size: 20px;
+                line-height: 29px;
+                color: $green;
+                font-weight: bold;
+                font-family: NotoSans;
+                text-align: center;
+                @include lp {
+                    margin-top: 10rem;
+                    font-size: 20rem;
+                    line-height: 29rem;
+                }
+                @include tb {
+                    margin-top: 10px;
+                    font-size: 20px;
+                    line-height: 29px;
+                }
+            }
+            .green-line {
+                width: 270px;
+                border: 2px solid #B0DCD6;
+                border-radius: 90px;
+                margin: 10px auto 0;
+                @include lp {
+                    width: 270rem;
+                    border-radius: 90rem;
+                    margin: 10rem auto 0;
+                }
+                @include tb {
+                    width: 270px;
+                    border-radius: 90px;
+                    margin: 10px auto 0;
+                }
+                @include sp {
+                    width: 295px;
+                }
+            }
+            .item-badges__list {
+                padding-left: 20px;
+                @include lp {
+                    padding-left: 20rem;
+                }
+                @include tb {
+                    padding-left: 20px;
+                }
+                .item-badge__item {
+                    margin-top: 10px;
+                    .badge {
+                        color: #fff;
+                        background-color: $green;
+                        font-size: 11px;
+                        line-height: 16px;
+                        font-weight: bold;
+                        font-family: NotoSans;
+                        text-align: center;
+                        border-radius: 90px;
+                        width: 52px;
+                        height: 25px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include lp {
+                            width: 52rem;
+                            height: 25rem;
+                            font-size: 11rem;
+                            line-height: 16rem;
+                        }
+                        @include tb {
+                            width: 52px;
+                            height: 25px;
+                            font-size: 11px;
+                            line-height: 16px;
+                        }
+                        @include sp {}
+                    }
+                    .badge-desc {
+                        padding-left: 5px;
+                        font-size: 14px;
+                        line-height: 16px;
+                        font-weight: bold;
+                        font-family: NotoSans;
+                        text-align: center;
+                        @include lp {
+                            font-size: 14rem;
+                            line-height: 16rem;
+                        }
+                        @include tb {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+            .item-bottom {
+                margin-top: 25px;
+                padding: 20px;
+                width: 310px;
+                height: 195px;
+                position: relative;
+                background: $green;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                @include lp {
+                    padding: 20rem;
+                    width: 350rem;
+                    height: 195rem;
+                }
+                @include tb {
+                    padding: 20px;
+                    width: 350px;
+                    height: 195px;
+                }
+                @include sp {
+                    padding: 20px;
+                    width: 335px;
+                    height: auto;
+                }
+                .comment-ttl {
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-family: Roboto;
+                    background: linear-gradient(transparent 60%, #008D70 0%);
+                    border-radius: 10px;
+                    display: table;
+                }
+                .comment-desc {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    @include lp {
+                        font-size: 15rem;
+                        line-height: 26rem;
+                    }
+                    @include tb {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+                &::before {
+                    content: " ";
+                    border-left: 13px solid transparent;
+                    border-right: 13px solid transparent;
+                    border-bottom: 20px solid $green;
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    @include lp {
+                        border-left: 13rem solid transparent;
+                        border-right: 13rem solid transparent;
+                        border-bottom: 20rem solid $green;
+                        top: -20rem;
+                    }
+                    @include tb {
+                        border-left: 13px solid transparent;
+                        border-right: 13px solid transparent;
+                        border-bottom: 20px solid $green;
+                        top: -20px;
+                    }
+                }
+            }
+        }
+        .ml-35 {
+            margin-left: 35px;
+        }
+        @include tb {
+            .ml-35 {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        @include sp {
+            .ml-35 {
+                margin: 20px auto 0;
+            }
+        }
+    }
+}

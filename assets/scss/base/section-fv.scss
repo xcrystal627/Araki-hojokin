@@ -1,0 +1,438 @@
+.section-fv {
+    .fv-top {
+        background: linear-gradient(to left top, #D2EACD, #F3F7F0);
+        height: 350px;
+        .container {
+            position: relative;
+            .fv-top__left {
+                padding-top: 50px;
+                width: 51%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .sm-ttl {
+                    font-size: 17px;
+                    line-height: 30px;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    color: $letter;
+                    background: linear-gradient(transparent 60%, #B0DCD6 0%);
+                    border-radius: 10px;
+                    display: inline-block;
+                    .sp-only {
+                        display: none;
+                    }
+                }
+                .main-ttl {
+                    margin-top: 10px;
+                    font-size: 36px;
+                    line-height: 48px;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    color: $green;
+                    text-align: center;
+                }
+                .left-pack {
+                    margin-top: 12px;
+                    display: flex;
+                    justify-content: center;
+                }
+                @include pc {
+                    .sm-ttl {
+                        font-size: 16rem;
+                        line-height: 30rem;
+                    }
+                }
+            }
+            .pc-not {
+                display: none;
+            }
+            .fv-top__right {
+                position: absolute;
+                top: 50px;
+                right: -78px;
+                @include pc {
+                    width: 600rem;
+                    right: -100rem;
+                }
+                @include lp {
+                    width: 600rem;
+                    right: 0rem;
+                }
+                // width: 595px;
+                // height: 352px;
+            }
+            @include tb {
+                .fv-top__left {
+                    width: 100%;
+                    .sm-ttl {
+                        font-size: 17px;
+                        line-height: 30px;
+                    }
+                    .main-ttl {
+                        margin-top: 10px;
+                        font-size: 36px;
+                        line-height: 48px;
+                    }
+                    .left-pack {
+                        margin-top: 12px;
+                    }
+                }
+                .pc-not {
+                    display: block;
+                    font-family: NotoSans;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: $letter;
+                    .sp-only {
+                        display: none;
+                    }
+                }
+                .fv-top__right {
+                    position: relative;
+                    margin: 0 auto;
+                }
+            }
+            @include md {
+                .fv-top__left {
+                    .sm-ttl {
+                        font-size: 42rem;
+                        line-height: 60rem;
+                    }
+                    .main-ttl {
+                        margin-top: 10rem;
+                        font-size: 80rem;
+                        line-height: 120rem;
+                    }
+                    .left-pack {
+                        margin-top: 12rem;
+                    }
+                }
+                .pc-not {
+                    display: block;
+                    margin-top: 30rem;
+                    font-size: 30rem;
+                    line-height: 45rem;
+                    .sp-only {
+                        display: none;
+                    }
+                }
+            }
+            @include sp {
+                .fv-top__left {
+                    padding-top: 30px;
+                    .sm-ttl {
+                        display: block;
+                        font-size: 18px;
+                        line-height: 24px;
+                        text-align: center;
+                        .sp-only {
+                            display: block;
+                        }
+                        background: none;
+                        .sm-ttl {
+                            background: linear-gradient(transparent 60%, #B0DCD6 0%);
+                            display: inline;
+                        }
+                    }
+                    .main-ttl {
+                        margin-top: 15px;
+                        font-size: 33px;
+                        line-height: 42px;
+                    }
+                    .left-pack {
+                        margin-top: 20px;
+                    }
+                }
+                .pc-not {
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 10px;
+                    line-height: 13px;
+                    text-align: left;
+                    .sp-only {
+                        display: block;
+                    }
+                }
+                .fv-top__right {
+                    margin-top: 28px;
+                    top: 0;
+                    width: 335px;
+                }
+            }
+        }
+        @include tb {
+            height: 550px;
+        }
+        @include md {
+            height: 1150rem;
+        }
+        @include sp {
+            height: 520px;
+            .container {
+                padding: 0 20px;
+            }
+        }
+    }
+    .container {
+        .fv-desc {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 17px;
+            font-family: NotoSans;
+            color: $letter;
+            @include tb {
+                display: none;
+            }
+        }
+    }
+    .fv-middle {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        .two-items {
+            display: flex;
+            justify-content: center;
+        }
+        &__item {
+            width: 320px;
+            height: 105px;
+            border: 4px solid $green;
+            border-radius: 6px;
+        }
+        &__item-f {
+            @extend .fv-middle__item;
+            background: url('./../img/fv-backitem-handshake.png');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .rate-name {
+                font-size: 20px;
+                line-height: 29px;
+                font-weight: bold;
+                font-family: NotoSans;
+                color: $letter;
+            }
+            .rate-number {
+                font-size: 40px;
+                line-height: 48px;
+                font-weight: bold;
+                font-family: Roboto;
+                color: $green;
+                .rate-percent {
+                    font-size: 20px;
+                    line-height: 29px;
+                }
+            }
+        }
+        &__item-s {
+            @extend .fv-middle__item;
+            background: url('./../img/fv-backitem-world.png');
+            background-size: cover;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .item-content {
+                text-align: center;
+                .item-top {
+                    font-size: 26px;
+                    line-height: 37px;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    color: $green;
+                }
+                .item-bottom {
+                    font-size: 20px;
+                    line-height: 29px;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    color: $letter;
+                }
+            }
+        }
+        &__item-t {
+            @extend .fv-middle__item;
+            background: url('./../img/fv-backitem-position.png');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 20px;
+            font-size: 26px;
+            line-height: 37px;
+            font-weight: bold;
+            font-family: NotoSans;
+            color: $green;
+        }
+        @include pc {
+            margin-top: 80px;
+            &__item {
+                width: 320rem;
+                height: 105rem;
+            }
+            &__item-f {
+                .rate-name {
+                    font-size: 20rem;
+                    line-height: 29rem;
+                }
+                .rate-number {
+                    font-size: 40rem;
+                    line-height: 48rem;
+                    .rate-percent {
+                        font-size: 20rem;
+                        line-height: 29rem;
+                    }
+                }
+            }
+            &__item-s {
+                .item-content {
+                    .item-top {
+                        font-size: 26rem;
+                        line-height: 37rem;
+                    }
+                    .item-bottom {
+                        font-size: 20rem;
+                        line-height: 29rem;
+                    }
+                }
+            }
+            &__item-t {
+                font-size: 26rem;
+                line-height: 37rem;
+            }
+        }
+        @include sp {
+            margin-top: 90px;
+            flex-direction: column;
+            align-items: center;
+            &__item {
+                width: 160px;
+                height: 57px;
+                border: 3px solid $green;
+                border-radius: 6px;
+            }
+            &__item-f {
+                .rate-name {
+                    font-size: 12px;
+                    line-height: 17px;
+                }
+                .rate-number {
+                    font-size: 28px;
+                    line-height: 34px;
+                    .rate-percent {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+            }
+            &__item-s {
+                margin-left: 10px;
+                .item-content {
+                    .item-top {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    .item-bottom {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+            }
+            &__item-t {
+                margin-left: 0px;
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    .fv-bottom {
+        margin-top: 60px;
+        margin-bottom: 80px;
+        &__desc {
+            font-size: 36px;
+            line-height: 52px;
+            font-weight: bold;
+            font-family: NotoSans;
+            color: $letter;
+            text-align: center;
+            .text-green {
+                color: $green;
+            }
+        }
+        &__people {
+            margin-top: 52px;
+            display: flex;
+            justify-content: space-around;
+            .people-item__pack {
+                position: relative;
+                .pack-desc {
+                    position: absolute;
+                    bottom: 30px;
+                    right: 20px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    color: $letter;
+                    .back-yellow {
+                        background: linear-gradient(transparent 60%, #FBEDA6 0%);
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        @include tb {
+            margin-top: 60rem;
+            &__people {
+                margin-top: 52rem;
+                .people-item__pack {
+                    .pack-desc {
+                        bottom: 30rem;
+                        right: 20rem;
+                        font-size: 25rem;
+                        line-height: 35rem;
+                    }
+                }
+            }
+        }
+        @include sp {
+            margin-top: 34px;
+            margin-bottom: 50px;
+            &__desc {
+                font-size: 22px;
+                line-height: 40px;
+            }
+            &__people {
+                margin-top: 32px;
+                flex-direction: column;
+                align-items: center;
+                .people-item__pack {
+                    .pack-desc {
+                        bottom: 15px;
+                        right: 20px;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+                .mt-20 {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .section-fv {
+        .fv-top {
+            .container {
+                padding: 0 20px;
+            }
+        }
+    }
+}

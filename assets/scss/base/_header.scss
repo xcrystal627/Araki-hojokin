@@ -1,0 +1,72 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.container {
+    max-width: 100%;
+    margin: auto;
+    width: 1000px;
+}
+
+$green: #23A58B;
+$yellow: #FFDB3A;
+$letter: #444444;
+html {
+    font-size: calc(100vw / 1400);
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .header-btn {
+            padding: 13px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 0px #E5E5E5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $yellow;
+            cursor: pointer;
+            &__counts {
+                padding: 7px;
+                font-size: 14px;
+                line-height: 20px;
+                border-radius: 3px;
+                font-weight: bold;
+                font-family: NotoSans;
+                color: $green;
+                background-color: #fff;
+            }
+            &__desc {
+                padding-left: 10px;
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: bold;
+                font-family: NotoSans;
+                color: $letter;
+            }
+        }
+        .header-btn:hover {
+            opacity: 0.8;
+        }
+        .header-btn:active {
+            opacity: 1;
+            box-shadow: 0px 4px 0px transparent;
+        }
+        @include tb {
+            padding-left: 30px;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+            .header-btn {
+                display: none;
+            }
+        }
+    }
+    @include sp {
+        height: 58px;
+    }
+}

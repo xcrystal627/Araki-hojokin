@@ -1,0 +1,70 @@
+    // -----------------------------------------------------------------------------
+    // This file contains all styles related to the footer of the site/application.
+    // -----------------------------------------------------------------------------
+    footer {
+        .footer {
+            padding: 30px;
+            font-size: 13px;
+            letter-spacing: 0.12em;
+            line-height: 15px;
+            text-align: center;
+            color: #fff;
+            font-family: NotoSans;
+            font-weight: bold;
+            background-color: #479A96;
+        }
+        .bottom-alarm {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 99999;
+            background-color: #fff;
+            width: 100%;
+            height: auto;
+            .net-alarm {
+                margin: 10px auto 25px;
+                width: 335px;
+                height: 60px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 0px #C5D5C2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $yellow;
+                &__counts {
+                    width: 87px;
+                    height: 34px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                    line-height: 20px;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    color: $green;
+                    background-color: #fff;
+                }
+                &__desc {
+                    margin-left: 10px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    color: $letter;
+                }
+            }
+            .net-alarm:hover {
+                opacity: 0.8;
+            }
+            .net-alarm:active {
+                opacity: 1;
+                box-shadow: 0px 4px 0px transparent;
+            }
+            @include sp {
+                display: block;
+            }
+        }
+    }

@@ -1,0 +1,264 @@
+.section-comparison {
+    padding-bottom: 100px;
+    .comparison-ttl {
+        text-align: center;
+        .en-ttl {
+            margin-top: 80px;
+            font-size: 26px;
+            line-height: 32px;
+            color: $letter;
+            font-weight: bold;
+            font-family: Roboto;
+            background: linear-gradient(transparent 60%, #B0DCD6 0%);
+            border-radius: 10px;
+            text-align: center;
+            display: inline-flex;
+            @include sp {
+                margin-top: 63px;
+                font-size: 22px;
+                line-height: 27px;
+            }
+        }
+        .jp-ttl {
+            margin-top: 10px;
+            font-size: 36px;
+            line-height: 52px;
+            color: $green;
+            font-weight: bold;
+            font-family: NotoSans;
+            @include sp {
+                margin-top: 9px;
+                font-size: 30px;
+                line-height: 44px;
+            }
+        }
+    }
+    .comparison-content {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        .content-first {
+            margin-top: 112px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            .first-f {
+                .f-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    border-radius: 6px;
+                    width: 138px;
+                    @include lp {
+                        width: 60px;
+                        writing-mode: vertical-lr;
+                    }
+                }
+                .f-item-f {
+                    @extend .f-item;
+                    height: 250px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    background-color: $green;
+                }
+                .f-item-s {
+                    @extend .f-item;
+                    margin-top: 5px;
+                    height: 165px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    background-color: $green;
+                }
+            }
+            .first-s {
+                margin-left: 5px;
+                .s-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    font-family: NotoSans;
+                    border-radius: 6px;
+                    width: 130px;
+                    height: 80px;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $letter;
+                    background-color: #E1F5DC;
+                    .start-tb {
+                        display: none;
+                    }
+                    @include tb {
+                        width: 80px;
+                        .start-tb {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .content-second {
+            margin-left: 5px;
+            border: 6px solid $green;
+            padding: 9px;
+            border-radius: 10px;
+            width: 272px;
+            .start-tb {
+                display: none;
+            }
+            @include tb {
+                width: 152px;
+                .start-tb {
+                    display: block;
+                }
+                text-align: center;
+            }
+            .second-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                font-family: NotoSans;
+                border-radius: 6px;
+                width: 242px;
+                margin-bottom: 5px;
+                @include tb {
+                    width: 122px
+                }
+            }
+            .item-head {
+                @extend .second-item;
+                height: 92px;
+                background: $green;
+                color: #fff;
+                font-size: 20px;
+                line-height: 29px;
+            }
+            .item-desc {
+                @extend .second-item;
+                height: 80px;
+                background: $green;
+                color: #fff;
+                font-size: 30px;
+                line-height: 37px;
+                color: $green;
+                background-color: #E1F5DC;
+                .content {
+                    text-align: center;
+                    .price {
+                        // font-size: ;
+                        &-unit {
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+                    .price-desc {
+                        font-size: 11px;
+                        line-height: 16px;
+                    }
+                }
+                .percent {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+            .mb-0 {
+                margin-bottom: 0;
+            }
+        }
+        .content-third {
+            margin-top: 15px;
+            margin-left: 5px;
+            width: 145px;
+            @include sp {
+                width: 105px;
+            }
+            .item-head {
+                height: 92px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                font-family: NotoSans;
+                border-radius: 6px;
+                width: 145px;
+                font-size: 18px;
+                line-height: 26px;
+                color: $letter;
+                background-color: #BFBFBF;
+                @include sp {
+                    width: 105px;
+                }
+            }
+            .item-desc {
+                margin-top: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                font-family: NotoSans;
+                border-radius: 6px;
+                width: 145px;
+                height: 80px;
+                font-size: 26px;
+                line-height: 32px;
+                color: $letter;
+                background-color: #F8F8F8;
+                @include sp {
+                    width: 105px;
+                }
+                .content {
+                    text-align: center;
+                    .price {
+                        font-size: 20px;
+                        line-height: 29px;
+                    }
+                }
+                .percent {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+        @include md {
+            overflow-x: scroll;
+            scrollbar-color: red;
+            margin: 0 auto;
+            justify-content: flex-start;
+        }
+    }
+    @include sp {
+        padding-top: 50px;
+        padding-top: 50PX;
+    }
+    .comparison-content {
+        &::-webkit-scrollbar {
+            width: 335px;
+            margin: 20px;
+            height: 24px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #F4F4F4;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #CCCCCC;
+            border-radius: 20px;
+            border: 3px solid #F4F4F4;
+            height: 12px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-comparison {
+        .container {
+            padding-left: 20px;
+        }
+    }
+}
